@@ -25,3 +25,18 @@ let hola2 : hello = {
 
 Js.log(hola.msg);
 Js.log(hola2.msg);
+
+type node =
+ | Node(int, node)
+ | Empty;
+
+let a = Node(5, Node(4, Empty));
+
+let rec printSum = (n) => {
+    switch(n){
+    |   Node(b, c) => b + printSum(c);
+    |   Empty => 0;
+    }
+}
+
+Js.log(printSum(a));

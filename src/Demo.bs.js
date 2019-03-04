@@ -25,6 +25,24 @@ console.log("Hola, que tal");
 
 console.log("Hola, como estas?");
 
+var a = /* Node */[
+  5,
+  /* Node */[
+    4,
+    /* Empty */0
+  ]
+];
+
+function printSum(n) {
+  if (n) {
+    return n[0] + printSum(n[1]) | 0;
+  } else {
+    return 0;
+  }
+}
+
+console.log(printSum(a));
+
 var count = 1;
 
 var hola = /* record */[
@@ -36,4 +54,6 @@ exports.factorial = factorial;
 exports.count = count;
 exports.hola = hola;
 exports.hola2 = hola2;
+exports.a = a;
+exports.printSum = printSum;
 /*  Not a pure module */
