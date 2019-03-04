@@ -14,5 +14,26 @@ function factorial(x) {
 
 console.log(factorial(5));
 
+console.log(2);
+
+var hola2 = /* record */[
+  /* msg */"Hola, como estas?",
+  /* lang */"Espanol"
+];
+
+console.log("Hola, que tal");
+
+console.log("Hola, como estas?");
+
+var count = 1;
+
+var hola = /* record */[
+  /* msg */"Hola, que tal",
+  /* lang */"Espanol"
+];
+
 exports.factorial = factorial;
+exports.count = count;
+exports.hola = hola;
+exports.hola2 = hola2;
 /*  Not a pure module */
