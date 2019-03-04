@@ -2,6 +2,7 @@
 'use strict';
 
 var Caml_int32 = require("bs-platform/lib/js/caml_int32.js");
+var Math$Basic = require("./Math.bs.js");
 
 function factorial(x) {
   var match = x === 0;
@@ -42,6 +43,8 @@ function printSum(n) {
 }
 
 console.log(printSum(a));
+
+console.log(Math$Basic.add(1, 2));
 
 var count = 1;
 

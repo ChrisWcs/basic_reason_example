@@ -40,3 +40,5 @@ let rec printSum = (n) => {
 }
 
 Js.log(printSum(a));
+
+Js.log(Math.add(1)(2));
